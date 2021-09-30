@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.template');
+	$arrPrice = [
+		"Bayi"=>["19.900", "14.900"], 
+		"Pelajar"=>["46.900", "23.450"], 
+		"Personal"=>["58.900", "38.900"], 
+		"Bisnis"=>["109.900", "65.900"]
+	];
+    return view('layouts.template', compact('arrPrice'));
 })->name('home');

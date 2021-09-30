@@ -7,6 +7,9 @@
 span.h1{
 	margin: 0em;
 }
+.nav-link{
+	color: #343a40;
+}
 
 .title-1, .title-2{
 	font-family: Montserrat;
@@ -206,6 +209,27 @@ span.h1{
 	display: none;
 }
 
+ul.checklist-mdi{
+	align-items: flex-start; 
+	display: flex; 
+	flex-direction: column; 
+	list-style: none; 
+	margin: 1em 0; 
+	padding-left: 0px;
+}
+
+.nav-mobile{
+	display: none;
+}
+@media (max-width: 991.98px){
+	.nav-mobile{
+		display: block;
+	}
+	.nav-normal{
+		display: none;
+	}
+}
+
 @media (min-width: 768px){
 	.livechat-wrap{
 		border-left: solid 1px #ffffff30;
@@ -259,6 +283,9 @@ span.h1{
 
 	.list-bank li{
 		width: 10%;
+	}
+	.top-1{
+		display: none;
 	}
 }
 @media (max-width: 575.98px){

@@ -31,7 +31,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col p-2">
-						<span class="nav-link mdi mdi-bookmark d-inline"></span> Gratis Ebook 9 Cara Cerdas Menggunakan Domain [x]
+						<img class="align-self-start" style="margin-top: -0.5em;" src="{{ asset('images/bookmark.png') }}"> Gratis Ebook 9 Cara Cerdas Menggunakan Domain [x]
 					</div>
 					<div class="col">
 						<ul class="nav justify-content-end">
@@ -51,11 +51,11 @@
 		</div>
 		<div class="top-2">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<img src="{{ asset('images/Logo.png') }}">
+				<div class="row col-12 m-auto">
+					<div class="col-md-3 col-12 align-self-center text-center">
+						<img class="w-75" src="{{ asset('images/Logo.png') }}">
 					</div>
-					<div class="col p-3">
+					<div class="col-md-9 col-12 p-3">
 						<nav class="nav justify-content-end">
 							<a class="nav-link" href="#">Hosting</a>
 							<a class="nav-link" href="#">Domain</a>
@@ -76,23 +76,22 @@
 
 	<div class="banner-1">
 		<div class="container">
-			<div class="row" >
-				<div class="align-self-center col-md-6 col-12 px-4">
-					<h1 class="title-1">PHP Hosting</h1>
-					<p class="h4 title-2">Cepat, handal, penuh dengan</p>
-					<p class="h4 title-2">modul PHP yang Anda butuhkan</p>
+		<div class="row col-12 px-4 mx-auto mt-4">
+			<div class="col-md-6 col-12 py-5 align-self-center">
+				<h1 class="title-1">PHP Hosting</h1>
+				<p class="h4 title-2">Cepat, handal, penuh dengan</p>
+				<p class="h4 title-2">modul PHP yang Anda butuhkan</p>
 
-					<ul style="align-items: flex-start; display: flex; flex-direction: column; list-style: none; margin: 1em 0 0; padding-left: 0px;">
-						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Solusi PHP untuk performa query yang lebih cepat.</span></li>
-						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Konsumsi memori yang lebih rendah.</span></li>
-						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 7.</span></li>
-						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Fitur enkripsi IonCube dan Zend Guard Loaders.</span></li>
-					</ul>
-				</div>
-				<div class="d-flex justify-content-end align-self-center col-md-6 col-12 px-4">
-					<div style="max-height: 250px" >
-						<img src="{{ asset('svg/illustration banner PHP hosting-01.svg') }}">
-					</div>
+				<ul class="checklist-mdi">
+					<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Solusi PHP untuk performa query yang lebih cepat.</span></li>
+					<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Konsumsi memori yang lebih rendah.</span></li>
+					<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 7.</span></li>
+					<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Fitur enkripsi IonCube dan Zend Guard Loaders.</span></li>
+				</ul>
+			</div>
+
+			<div class="col-md-6 col-12 py-5 d-flex justify-content-end align-self-center">
+					<img class="w-75" src="{{ asset('svg/illustration banner PHP hosting-01.svg') }}">
 				</div>
 				
 			</div>
@@ -136,8 +135,8 @@
 					</div>
 					<div class="bottom-border">
 						<div class="p-2">
-							<div><span><s>Rp19.000</s></span></div>
-							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> 14</b></span><span><b>.900</b></span><span>/ bln</span></div>
+							<div><span><s>Rp{{ $arrPrice['Bayi'][0] }}</s></span></div>
+							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> {{ explode('.', $arrPrice['Bayi'][1])[0] }}</b></span><span><b>.{{ explode('.', $arrPrice['Bayi'][1])[1] }}</b></span><span>/ bln</span></div>
 						</div>
 						
 					</div>
@@ -169,8 +168,8 @@
 					</div>
 					<div class="bottom-border">
 						<div class="p-2">
-							<div><span><s>Rp19.000</s></span></div>
-							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> 14</b></span><span><b>.900</b></span><span>/ bln</span></div>
+							<div><span><s>Rp{{ $arrPrice['Pelajar'][0] }}</s></span></div>
+							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> {{ explode('.', $arrPrice['Pelajar'][1])[0] }}</b></span><span><b>.{{ explode('.', $arrPrice['Pelajar'][1])[1] }}</b></span><span>/ bln</span></div>
 						</div>
 						
 					</div>
@@ -212,8 +211,8 @@
 					</div>
 					<div class="bottom-border harga-header">
 						<div class="p-2">
-							<div><span><s>Rp19.000</s></span></div>
-							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> 14</b></span><span><b>.900</b></span><span>/ bln</span></div>
+							<div><span><s>Rp{{ $arrPrice['Personal'][0] }}</s></span></div>
+							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> {{ explode('.', $arrPrice['Personal'][1])[0] }}</b></span><span><b>.{{ explode('.', $arrPrice['Personal'][1])[1] }}</b></span><span>/ bln</span></div>
 						</div>
 						
 					</div>
@@ -244,13 +243,13 @@
 				<div class="col-md-3 col-12 p-0 text-center card-harga mb-3">
 					<div class="bottom-border">
 						<div class="p-2">
-							<span class="h4" style="font-weight: 800">Bayi</span>
+							<span class="h4" style="font-weight: 800">Bisnis</span>
 						</div>
 					</div>
 					<div class="bottom-border">
 						<div class="p-2">
-							<div><span><s>Rp19.000</s></span></div>
-							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> 14</b></span><span><b>.900</b></span><span>/ bln</span></div>
+							<div><span><s>Rp{{ $arrPrice['Bisnis'][0] }}</s></span></div>
+							<div class="d-flex justify-content-center"><span class="align-self-start">Rp &nbsp</span><span class="h1"><b> {{ explode('.', $arrPrice['Bisnis'][1])[0] }}</b></span><span><b>.{{ explode('.', $arrPrice['Bisnis'][1])[1] }}</b></span><span>/ bln</span></div>
 						</div>
 						
 					</div>
@@ -377,7 +376,7 @@
 				<div class="col-md-6 col-12">
 					<p class="lead">Tak perlu menggunakan dedicated server ataupun VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorite Anda</p>
 
-					<ul style="align-items: flex-start; display: flex; flex-direction: column; list-style: none; margin: 1em 0; padding-left: 0px;">
+					<ul class="checklist-mdi">
 						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Install Laravel <strong>1 klik</strong> dengan Softaculous Installer.</span></li>
 						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Mendukung ekstensi <strong>PHP MCrypt, phar mbstring, json,</strong> dan <strong>fileinfo.</strong></span></li>
 						<li class="p-0 d-flex"><span class="mdi mdi-check-circle"></span><span class="align-self-center">&nbsp Tersedia <strong>Composer</strong> dan <strong>SSH</strong> untuk menginstall packages pilihan Anda.</span></li>
